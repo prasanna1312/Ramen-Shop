@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    background-color: #f5efe4;
+    color: #0C0911;
+}
+
+/*=========Nav Bar=============*/
+.nav-bar{
+    height:80px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid #d8d0c4;
+}
+
+.logo{
+    font-size:32px;
+    text-decoration: none;
+    color:#0C0911;
+    font-family: "DM Serif Display", serif;
+}
+
+.nav-links{
+    display: flex;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#0C0911;
+    font-weight: 500px;
+}
+
+.nav-links a:hover{
+    color:#A32C27;
+}
+
+.cart-btn{
+    border:2px solid black;
+    text-decoration: none;
+    border-radius:50%;
+    background-color: #0C0911;
+    color:white;
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+}
+
+/*==================Main================*/
+.content{
+    min-height: calc(100vh - 80px);
+    padding: 70px 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.tag-line{
+    color:#A32C27;
+    font-family:"DM Sans", sans-serif;
+    font-size:17px;
+    font-weight: 500;
+    padding-left:10px;
+    
+}
+
+h1{
+font-family: "DM Serif Display", serif;
+font-size:60PX;
+margin-top:15px;
+color:#1B3543;
+}
+span{
+    color:#A32C27;
+}
+
+.text{
+    color:#825C4A;
+    margin-top:15px;
+    padding-left:10px;
+}
+.btn{
+   display:flex;
+   gap:10px;
+   margin-top: 20px;
+   padding-left:10px;
+
+}
+.build-btn
+{
+   text-decoration: none;
+   color:white;
+   padding:10px;
+   background-color:#0C0911;
+}
+.menu-btn{
+   text-decoration: none;
+   color:white;
+   padding:10px;
+   background-color:#A32C27;
+}
+.main-img{
+    width:100%;
+    height:500px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
