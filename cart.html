@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koyu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <a href="index.html" class="logo">KŌYU</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="build.html">Build Your Bowl</a>
+        </nav>
+        <a href="cart.html" class="cart-btn">🛒</a>
+    </header>
+    <h2 class="cart-title">Your Cart</h2>
+    <main class="cart-container">
+        <div class="cart-items">
+            <p>No items selected</p>
+        </div>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+                <span>SubTotal</span>
+                <span id="subtotal">$0</span>
+            </div>
+            <div class="summary-delivery">
+                <span>Delivery</span>
+                <span id="delivery">$0</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="total">$0</span>
+            </div>
+            <button id="checkout">Proceed to Payment</button><br>
+            <a href="menu.html" id="cont-shop">Continue shopping</a>
+        </div>
+            
+           
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>
