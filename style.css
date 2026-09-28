@@ -236,7 +236,7 @@ span {
   gap: 10px;
   padding-top: 5px;
 }
-.options p {
+.options label {
   margin: 0;
   padding: 9px 15px;
   background-color: #fdf3d8;
@@ -248,11 +248,26 @@ span {
   cursor: pointer;
 }
 
-.options p:hover {
+.options label:hover {
   background-color: #a32c27;
   color: white;
   border-color: #a32c27;
   transform: translateY(-2px);
+}
+
+.options input {
+    accent-color: #222;
+}
+
+.options label:has(input:checked){
+    background-color: #222;
+    color: white;
+    border-color: #222;
+}
+
+#add-to-cart {
+    display: block;
+    margin: 30px auto;
 }
 
 /*================cart==========*/
@@ -265,8 +280,6 @@ span {
   display:flex;
   justify-content: space-around;
 }
-
-
 .cart-item {
   display: flex;
   align-items: center;

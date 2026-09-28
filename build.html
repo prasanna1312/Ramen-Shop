@@ -1,96 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koyu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="nav-bar">
-        <a href="index.html" class="logo">KŌYU</a>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="build.html">Build Your Bowl</a>
-        </nav>
-        <a href="cart.html" class="cart-btn">🛒</a>
+      <a href="index.html" class="logo">KŌYU</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="build.html">Build Your Bowl</a>
+      </nav>
+      <a href="cart.html" class="cart-btn">🛒</a>
     </header>
-    <h2 class="bowl-title"> Build Your Bowl</h2>
+    <h2 class="bowl-title">Build Your Bowl</h2>
 
     <main class="ramen-bowl">
-        <div class="noodles">
-            <h3>NOODLES</h3>
-            <p>Twirl, slurp, and find your perfect noodle!</p>
-            <div class="options">
-                 <p>Wheat noddles</p>
-            <p>Buckwheat noodles</p>
-            <p>Rice noodles</p>
-            <p>Konjac noodles</p>
-            <p>Udon noodles</p>
-            </div>
+      <div class="noodles">
+        <h3>NOODLES</h3>
+        <p>Twirl, slurp, and find your perfect noodle!</p>
+        <div class="options">
+          <label>
+            <input
+              type="radio"
+              name="noodles"
+              value="Wheat noddles"
+              data-price="3"
+            />
+            Wheat noddles - $3
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="noodles"
+              value="Buckwheat noodles"
+              data-price="4"
+            />
+            Buckwheat noodles - $4
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="noodles"
+              value="Rice noodles"
+              data-price="3"
+            />
+            Rice noodles - $3
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="noodles"
+              value="Konjac noodles"
+              data-price="4"
+            />
+            Konjac noodles - $4
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="noodles"
+              value="Udon noodles"
+              data-price="4"
+            />
+            Udon noodles - $4
+          </label>
         </div>
-        <div class="broth">
-            <h3>BROTH</h3>
-            <p>The slow simmered rich and heartwarming foundation of any bowl of ramen.</p>
-           <div class="options">
-             <p>Tonkotsu</p>
-            <p>Shoyu</p>
-            <p>Miso</p>
-            <p>Spicy tantan</p>
-            <p>Shio</p>
-            <p>Vegetable</p>
-           </div>
+      </div>
+      <div class="broth">
+        <h3>BROTH</h3>
+        <p>
+          The slow simmered rich and heartwarming foundation of any bowl of
+          ramen.
+        </p>
+        <div class="options">
+          <label>
+            <input type="radio" name="broth" value="Tonkotsu" data-price="4" />
+            Tonkotsu - $4
+          </label>
+
+          <label>
+            <input type="radio" name="broth" value="Shoyu" data-price="3" />
+            Shoyu - $3
+          </label>
+
+          <label>
+            <input type="radio" name="broth" value="Miso" data-price="4" />
+            Miso - $4
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="broth"
+              value="Spicy tantan"
+              data-price="4"
+            />
+            Spicy tantan - $4
+          </label>
+
+          <label>
+            <input type="radio" name="broth" value="Shio" data-price="3" />
+            Shio - $3
+          </label>
+
+          <label>
+            <input type="radio" name="broth" value="Vegetable" data-price="3" />
+            Vegetable - $3
+          </label>
         </div>
-        <div class="protein">
-            <h3>PROTEIN</h3>
-            <p>Choose your favourite protein for that satisfying bite!</p>
-            <div class="options">
-                 <p>Popcorn chicken</p>
-            <p>Grilled chicken</p>
-            <p>Teriyaki chicken</p>
-            <p>Shrimp</p>
-            <p>Crab</p>
-            <p>Meatballs</p>
-            </div>
-           
+      </div>
+      <div class="protein">
+        <h3>PROTEIN</h3>
+        <p>Choose your favourite protein for that satisfying bite!</p>
+        <div class="options">
+          <label>
+            <input
+              type="checkbox"
+              name="protein"
+              value="Popcorn chicken"
+              data-price="4"
+            />
+            Popcorn chicken - $4
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="protein"
+              value="Grilled chicken"
+              data-price="5"
+            />
+            Grilled chicken - $5
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="protein"
+              value="Teriyaki chicken"
+              data-price="5"
+            />
+            Teriyaki chicken - $5
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="protein"
+              value="Shrimp"
+              data-price="6"
+            />
+            Shrimp - $6
+          </label>
+
+          <label>
+            <input type="checkbox" name="protein" value="Crab" data-price="7" />
+            Crab - $7
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="protein"
+              value="Meatballs"
+              data-price="5"
+            />
+            Meatballs - $5
+          </label>
         </div>
-        <div class="toppings">
-            <h3>TOPPINGS</h3>
-            <p>Add fun, flavour, texture, and fragrance to your masterpiece!</p>
-            <div class="options">
-                <p>Grean onions</p>
-            <p>Shredded carrots</p>
-            <p>Corn</p>
-            <p>Spinach</p>
-            <p>Mushroom</p>
-            <p>Cucumber</p>
-            <p>Boiled eggs</p>
-            <p>Cheese cubes</p>
-            <p>Sesame seeds</p>
-            <p>Crushed ramen</p>
-            <p>Nori (seaweed)</p>
-            <p>kimchi</p>
-            </div>
-            
+      </div>
+      <div class="toppings">
+        <h3>TOPPINGS</h3>
+        <p>Add fun, flavour, texture, and fragrance to your masterpiece!</p>
+        <div class="options">
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Green onions"
+              data-price="1"
+            />
+            Green onions - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Shredded carrots"
+              data-price="1"
+            />
+            Shredded carrots - $1
+          </label>
+
+          <label>
+            <input type="checkbox" name="topping" value="Corn" data-price="1" />
+            Corn - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Spinach"
+              data-price="1"
+            />
+            Spinach - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Mushroom"
+              data-price="2"
+            />
+            Mushroom - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Cucumber"
+              data-price="1"
+            />
+            Cucumber - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Boiled eggs"
+              data-price="2"
+            />
+            Boiled eggs - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Cheese cubes"
+              data-price="2"
+            />
+            Cheese cubes - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Sesame seeds"
+              data-price="1"
+            />
+            Sesame seeds - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Crushed ramen"
+              data-price="1"
+            />
+            Crushed ramen - $1
+          </label>
+
+          <label>
+            <input type="checkbox" name="topping" value="Nori" data-price="2" />
+            Nori (seaweed) - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="topping"
+              value="Kimchi"
+              data-price="2"
+            />
+            Kimchi - $2
+          </label>
         </div>
-        <div class="sauce">
-            <h3>SAUCE</h3>
-            <p>The delicious and salty seasoning sauce loaded with umami flavour.</p>
-            <div class="options">
-                <p>Sriracha</p>
-            <p>Soy sauce</p>
-            <p>Yum yum sauce</p>
-            <p>Spicy mayo</p>
-            <p>Teriyaki sauce</p>
-            <p>Chili oil</p>
-            <p>Sesame oil</p>
-            <p>Garlic oil</p>
-            </div>
+      </div>
+      <div class="sauce">
+        <h3>SAUCE</h3>
+        <p>
+          The delicious and salty seasoning sauce loaded with umami flavour.
+        </p>
+        <div class="options">
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Sriracha"
+              data-price="1"
+            />
+            Sriracha - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Soy sauce"
+              data-price="1"
+            />
+            Soy sauce - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Yum yum sauce"
+              data-price="2"
+            />
+            Yum yum sauce - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Spicy mayo"
+              data-price="2"
+            />
+            Spicy mayo - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Teriyaki sauce"
+              data-price="2"
+            />
+            Teriyaki sauce - $2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Chili oil"
+              data-price="1"
+            />
+            Chili oil - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Sesame oil"
+              data-price="1"
+            />
+            Sesame oil - $1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="sauce"
+              value="Garlic oil"
+              data-price="1"
+            />
+            Garlic oil - $1
+          </label>
         </div>
+      </div>
+      <button class="addCart-btn" id="add-to-cart">Add to cart</button>
     </main>
-</body>
+
+    <script src="build.js"></script>
+  </body>
 </html>
