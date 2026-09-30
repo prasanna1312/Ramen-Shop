@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koyu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <a href="index.html" class="logo">KŌYU</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="build.html">Build Your Bowl</a>
+      </nav>
+      <a href="cart.html" class="cart-btn">🛒</a>
+    </header>
+    <main class="payment-container">
+      <h2>Payment</h2>
+      <form id="payment-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Delivery Address</label>
+          <textarea id="address" required></textarea>
+        </div>
+        <h3>Payment Method</h3>
+        <div class="payment-method">
+          <label>
+            <input type="radio" name="payment" value="card" checked /> Credit /
+            Debit Card
+          </label>
+          <label> <input type="radio" name="payment" value="upi" /> UPI </label>
+          <label>
+            <input type="radio" name="payment" value="cash" /> Cash on Delivery
+          </label>
+        </div>
+        <div class="card-details">
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input
+              type="text"
+              id="card-number"
+              placeholder="1234 5678 9012 3456"
+            />
+          </div>
+          <div class="card-row">
+            <div class="form-group">
+              <label for="expiry">Expiry</label>
+              <input type="text" id="expiry" placeholder="MM/YY" />
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="password" id="cvv" placeholder="123" />
+            </div>
+          </div>
+        </div>
+        <div class="payment-total">
+          <h3>Total: $<span id="payment-total">0.00</span></h3>
+        </div>
+        <button type="submit" id="place-order">Place Order</button>
+      </form>
+    </main>
+    <script src="payment.js"></script>
+  </body>
+</html>

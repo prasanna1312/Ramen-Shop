@@ -348,3 +348,146 @@ margin-bottom:10px;
 #cont-shop{
   color:black;
 }
+
+/*===========Payment==============*/
+
+.payment-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #f5eee5;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.payment-container h2 {
+    text-align: center;
+    color: #a32c27;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5f4638;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    border: 1px solid #c9c0b4;
+    border-radius: 8px;
+    background-color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #a32c27;
+}
+
+.form-group textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+
+
+.payment-container h3 {
+    color: #5f4638;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 15px;
+    background-color: #ffffff;
+    border: 1px solid #c9c0b4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.payment-method label:hover {
+    border-color: #a32c27;
+}
+
+.payment-method input {
+    accent-color: #a32c27;
+}
+
+.card-row {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-total {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #c9c0b4;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.payment-total h3 {
+    margin: 0;
+    color: #a32c27;
+    font-size: 22px;
+}
+
+#place-order {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a32c27;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#place-order:hover {
+    background-color: #82231f;
+    transform: translateY(-2px);
+}
+
+#payment-btn {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a32c27;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#payment-btn:hover {
+    background-color: #82231f;
+    transform: translateY(-2px);
+}
+
+
+

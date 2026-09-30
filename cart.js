@@ -41,6 +41,15 @@ function displayCart()
     del.textContent ="$"+delivery;
     total.textContent = "$" + finalTotal;
 }
+const paymentBtn = document.getElementById("checkout");
 
+paymentBtn.addEventListener("click", function () {
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    window.location.href = "payment.html";
+});
 displayCart();
 
